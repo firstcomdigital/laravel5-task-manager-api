@@ -11,7 +11,9 @@
 |
 */
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+use App\Api\V1\Models\User;
+
+$factory->define(User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
