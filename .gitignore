@@ -1,7 +1,19 @@
+# IDE
 /.idea
+
+# misc
 /node_modules
-/public/storage
 /vendor
+
+# laravel
+/public/storage
 Homestead.json
 Homestead.yaml
 .env
+.env.testing
+
+# codeception
+tests/_output/*
+tests/_support/_generated
+tests/api.suite.yml
+tests/acceptance.suite.yml
