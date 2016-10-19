@@ -16,6 +16,6 @@ use Illuminate\Http\Request;
 $api = app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-
     $api->get('', 'App\Api\V1\Controllers\ApiController@index');
+    $api->resource('users', 'App\Api\V1\Controllers\UsersController');
 });

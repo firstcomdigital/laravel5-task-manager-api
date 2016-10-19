@@ -20,6 +20,23 @@ $ cp .env.example .env
 
 Fill in .env file
 
+## Data
+
+To create required database tables, update .env file with local database configuration and then run:
+```bash
+php artisan migrate
+```
+
+To populate the database with demo data run:
+```bash
+php artisan db:seed
+```
+
+To reseed, first recreate the tables by running:
+```bash
+php artisan migrate:refresh
+```
+
 ## Dev
 
 ```bash
